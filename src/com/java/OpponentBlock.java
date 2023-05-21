@@ -5,7 +5,7 @@ package com.java;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ComputerMove{
+public class OpponentBlock{
 
     public static Scanner scannerObject = new Scanner(System.in);
     public static final Random randomGenerator = new Random();
@@ -66,9 +66,7 @@ public class ComputerMove{
             }
         }
     }
-/*
- * UC8- check if Computer can win then play that move
- */
+
     public static void computerMove() {
         System.out.println("\nComputer Is Playing");
         do {
@@ -114,7 +112,9 @@ public class ComputerMove{
         }
         return false;
     }
-
+/*
+ * UC-9 check if my Opponent can win then play to block it
+ */
     public static boolean predictWinLocationAndBlock() {
         if (board[1] == computer && board[2] == computer && board[3] == ' ') {
             playLocation = 3;
