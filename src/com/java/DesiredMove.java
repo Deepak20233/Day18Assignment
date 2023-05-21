@@ -2,7 +2,7 @@ package com.java;
 
 import java.util.Scanner;
 
-public class UserMove {
+public class DesiredMove {
 	private static int playLocation;
 	static char player, computer;
 	static char[] board = new char[10];
@@ -51,8 +51,9 @@ public class UserMove {
 	        System.out.println("You have selected : " + player);
 	        System.out.println("Computer's choice is : " + computer);
 	    }
-	 
-	 
+	 /*
+	  * UC5 ability to check free space before making desire move
+	  */
 	  public static boolean isEmpty(int location) {
 	        return board[location] == ' ';
 
